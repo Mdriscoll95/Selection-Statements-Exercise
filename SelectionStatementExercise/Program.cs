@@ -9,13 +9,19 @@
 
             int input = int.Parse(Console.ReadLine());
 
-            if (input == favNumber) 
+            if (input == favNumber)
             {
-                Console.WriteLine($"Correct");
+                Console.WriteLine($"You Guessed it!");
+            }
+            else if (input > favNumber)
+            {
+                Console.WriteLine($"too high!");
+                Console.ReadKey();
             }
             else
             {
-                Console.WriteLine($"incorrect!");
+                Console.WriteLine($"too low");
+
             }
         }
     }
